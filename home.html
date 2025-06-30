@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlexiConnect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #f4f7f9;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    header {
+      background: #6a1b9a;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    nav a {
+      margin-left: 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      padding: 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, #ab47bc, #6a1b9a);
+      color: white;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .btn-group {
+      margin-top: 2rem;
+    }
+    .btn-group a {
+      display: inline-block;
+      margin: 0 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #6a1b9a;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn-group a:hover {
+      background: #8e24aa;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+    }
+    .sub-card {
+      margin-top: 0.75rem;
+      padding: 0.5rem;
+      background-color: #f3e5f5;
+      border-radius: 8px;
+    }
+    .slot-available {
+      background-color: #d1fae5;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+    }
+    .slot-unavailable {
+      background-color: #fee2e2;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #6a1b9a;
+      color: white;
+      margin-top: 2rem;
+    }
+    button {
+      margin-top: 0.75rem;
+      background: #8e24aa;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ba68c8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EmpowHer</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#workers">Workers</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Enabling her wealth, her way.</h2>
+    <p>Connect with local shops for part-time jobs or offer your products to be sold in stores. All in one simple platform.</p>
+    <div class="btn-group">
+      <a href="#jobs">Explore Jobs</a>
+      <a href="#workers">View Workers</a>
+    </div>
+  </section>
+
+  <section class="section" id="jobs">
+    <h2>Businesses</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Cake Palace</h3>
+        <div class="sub-card">Cake Decorator - <span class="slot-available">Monday 10am</span>, <span class="slot-unavailable">Tuesday 4pm</span></div>
+        <div class="sub-card">Courier - <span class="slot-available">Daily 6pm</span></div>
+        <button>Sell Your Cake Here</button>
+      </div>
+      <div class="card"><h3>Style Studio</h3><div class="sub-card">Tailoring Help - <span class="slot-available">Wed 12pm</span></div><button>Sell Apparel Here</button></div>
+      <div class="card"><h3>Mom's Kitchen</h3><div class="sub-card">Veg Prep - <span class="slot-available">Morning 9am</span></div><div class="sub-card">Dish Wash - <span class="slot-unavailable">Evening 6pm</span></div><button>Sell Food Packs</button></div>
+      <div class="card"><h3>Craft Heaven</h3><div class="sub-card">Display Setup - <span class="slot-available">Fri 3pm</span></div><button>Sell Art Here</button></div>
+      <div class="card"><h3>Bake & Bite</h3><div class="sub-card">Packaging - <span class="slot-unavailable">Sat 5pm</span></div><button>Sell Pastries</button></div>
+      <div class="card"><h3>Dress Circle</h3><div class="sub-card">Steam Press - <span class="slot-available">Sun 11am</span></div><button>Sell Fashionwear</button></div>
+      <div class="card"><h3>The Tea Stop</h3><div class="sub-card">Server - <span class="slot-unavailable">Afternoon 2pm</span></div><button>Sell Snacks</button></div>
+      <div class="card"><h3>Jewels & More</h3><div class="sub-card">Packing - <span class="slot-available">Evening 4pm</span></div><button>Sell Jewelry</button></div>
+      <div class="card"><h3>Snack Shack</h3><div class="sub-card">Clean-up Crew - <span class="slot-unavailable">Night 8pm</span></div><button>Sell Homemade Snacks</button></div>
+      <div class="card"><h3>Color Prints</h3><div class="sub-card">Assistant - <span class="slot-available">Mon 10am</span></div><button>Sell Artwork</button></div>
+    </div>
+  </section>
+
+  <section class="section" id="workers">
+    <h2>Previous Workers</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Rekha S</h3>
+        <p>Worked at: Cake Palace, Craft Heaven</p>
+        <p>Rating: ⭐⭐⭐⭐☆</p>
+      </div>
+      <div class="card">
+        <h3>Amit P</h3>
+        <p>Worked at: Snack Shack, The Tea Stop</p>
+        <p>Rating: ⭐⭐⭐⭐⭐</p>
+      </div>
+      <div class="card">
+        <h3>Meera T</h3>
+        <p>Worked at: Dress Circle, Style Studio</p>
+        <p>Rating: ⭐⭐⭐⭐☆</p>
+      </div>
+      <div class="card">
+        <h3>Karthik V</h3>
+        <p>Worked at: Mom's Kitchen</p>
+        <p>Rating: ⭐⭐⭐☆☆</p>
+      </div>
+      <div class="card">
+        <h3>Sonal R</h3>
+        <p>Worked at: Jewels & More, Bake & Bite</p>
+        <p>Rating: ⭐⭐⭐⭐☆</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FlexiConnect | Empowering Local Work</p>
+  </footer>
+</body>
+</html>
